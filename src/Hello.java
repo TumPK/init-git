@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Hello {
 
@@ -5,9 +6,12 @@ public class Hello {
 		
 		System.out.println("Hello World");
 		
-		for(int i=0; i < 10; i++) {
-			System.out.println("NO."+i);
-		}
+		Scanner in = new Scanner(System.in);
+		System.out.println("input score : ");
+		double score = in.nextDouble();
+		
+		Grade grade = new Grade(score);
+		System.out.println(grade.calculateGrade());
 	}
 
 }
