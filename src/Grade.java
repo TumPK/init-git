@@ -19,8 +19,16 @@ public class Grade {
 		String str = "";
 		if(score > 100) {
 			str += "over";
-		}else {
-			str += "ok";
+		}else if(score >= 80) {
+			str += "A";
+		}else if(score >= 70) {
+			str += "B";
+		}else if(score >= 60) {
+			str += "C";
+		}else if(score >= 50) {
+			str += "D";
+		}else{
+			str += "F";
 		}
 		return str;
 	}
