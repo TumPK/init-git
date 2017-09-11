@@ -27,8 +27,10 @@ public class Grade {
 			str += "C";
 		}else if(score >= 50) {
 			str += "D";
-		}else{
+		}else if(score >= 0){
 			str += "F";
+		}else{
+			str += "lower";
 		}
 		return str;
 	}
